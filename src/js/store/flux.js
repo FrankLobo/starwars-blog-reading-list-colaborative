@@ -1,17 +1,26 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
+			Characters: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+					apiUrl: 'https://www.swapi.tech/api/people',
+            		apiKey: '',
+            		photos: null,
 				},
+			],
+			Planets: [
 				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
+					apiUrl: 'https://www.swapi.tech/api/planets',
+            		apiKey: '',
+            		photos: null,
+				},
+			],
+			Vehicles: [
+				{
+					apiUrl: 'https://www.swapi.tech/api/vehicles',
+            		apiKey: '',
+            		photos: null,
+				},
 			]
 		},
 		actions: {
