@@ -1,3 +1,10 @@
 /* 
     General Styles
 */
+.box-animated h1{
+    font-size: 8rem;
+    text-align: center;
+    width: 50%;
+    align-content: center;
+    margin: 400px auto;
+}
