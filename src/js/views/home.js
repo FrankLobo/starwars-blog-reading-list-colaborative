@@ -19,8 +19,8 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="container-fluid d-flex justify-content-center">
-        <div className="row gap-3">
+      <div className="container">
+        <div className="row">
           <div className="col-md-3 ">
             <Card
               title="Card Title"
