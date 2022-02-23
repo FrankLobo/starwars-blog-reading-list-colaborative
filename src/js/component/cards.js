@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { AiFillHeart } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
@@ -11,9 +12,11 @@ const Card = (props) => {
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.description}</p>
+          <Link to="/details">
           <a href={props.buttonURL} className="btn btn-primary">
             {props.buttonLabel}
           </a>
+          </Link>
           <div className="d-grid gap-2 d-flex justify-content-md-end">
             <button
               className="btn btn-primary me-md-2"
