@@ -10,9 +10,11 @@
 }
 body{
     background-color: black;
-    background-image: url(https://c.wallhere.com/photos/83/b2/movies_Star_Wars_Star_Wars_Episode_VI_The_Return_of_the_Jedi_science_fiction_Death_Star-229128.jpg!d);
-    background-repeat: no-repeat;
-    position: inherit;
-    
-
+ /*    background-image: url(); */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100rem; */
 }
+
+
+
+/* https://c.wallhere.com/photos/83/b2/movies_Star_Wars_Star_Wars_Episode_VI_The_Return_of_the_Jedi_science_fiction_Death_Star-229128.jpg!d */
