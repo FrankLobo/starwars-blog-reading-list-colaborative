@@ -6,7 +6,7 @@ import Carousel from "../component/carousel";
 export const Home = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-12">
             <Carousel
@@ -18,8 +18,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-3 ">
             <Card
