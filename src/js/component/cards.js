@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <>
+      <div className="card py-5">
       <div className="card d-flex gap-3">
         <img src={rigoImage} className="card-img-top" alt="..." />
         <div className="card-body">
@@ -19,6 +20,7 @@ const Card = (props) => {
           </Link>
           <div className="d-grid gap-2 d-flex justify-content-md-end">
             <button
+              className="btn btn-outline-warning me-md-2"
               className="btn btn-outline-warning me-md-2 "
               type=""
             ><AiFillHeart /></button>

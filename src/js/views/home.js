@@ -6,6 +6,7 @@ import Carousel from "../component/carousel";
 export const Home = () => {
   return (
     <>
+      <div className="container-sm 960">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12">
@@ -18,6 +19,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <div className="container">
+        <div className="row">         
+          <div className="col-md-4 py-3">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3 ">
@@ -28,7 +32,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
@@ -36,7 +40,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb dfbdsfbsdfb"
@@ -44,7 +48,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
@@ -52,7 +56,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb  fbdsfbsdfb"
@@ -60,7 +64,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
@@ -68,7 +72,7 @@ export const Home = () => {
               buttonURL=""
             />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 py-3">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgbd bsdfbdsfbsdfb"

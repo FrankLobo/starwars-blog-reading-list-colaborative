@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import rigoImage from "../../img/rigo-baby.jpg";
+import Starwars from "../../img/starwars1.jpg";
+import Starwars2 from "../../img/starwars2.jpg";
+import Starwars3 from "../../img/starwars3.jpg";
+
 
 const Carousel = (props) => {
   return (
     <>
       <div
         id="carouselExampleCaptions"
+        className="carousel slide py-3"
         className="carousel slide py-5"
         data-bs-ride="carousel"
       >
@@ -34,31 +38,31 @@ const Carousel = (props) => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={rigoImage} className="d-block w-60" alt="..." />
-            <div className="carousel-caption d-none d-md-block text-dark">
+            <img src={Starwars2} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
               <h5>{props.title}</h5>
               <p>{props.description}</p>
-              <a href={props.buttonURL} className="btn btn-secondary">
+              <a href={props.buttonURL} className="btn btn-outline-secondary">
                 {props.buttonLabel}
               </a>
             </div>
           </div>
           <div className="carousel-item ">
-            <img src={rigoImage} className="d-block w-60" alt="..." />
-            <div className="carousel-caption d-none d-md-block text-dark">
+            <img src={Starwars} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
               <h5>{props.title}</h5>
               <p>{props.description}</p>
-              <a href={props.buttonURL} className="btn btn-secondary">
+              <a href={props.buttonURL} className="btn btn-outline-secondary">
                 {props.buttonLabel}
               </a>
             </div>
           </div>
           <div className="carousel-item">
-            <img src={rigoImage} className="d-block w-60" alt="..." />
-            <div className="carousel-caption d-none d-md-block text-dark">
+            <img src={Starwars3} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
               <h5>{props.title}</h5>
               <p>{props.description}</p>
-              <a href={props.buttonURL} className="btn btn-secondary">
+              <a href={props.buttonURL} className="btn btn-outline-secondary">
                 {props.buttonLabel}
               </a>
             </div>
