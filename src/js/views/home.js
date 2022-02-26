@@ -7,6 +7,7 @@ export const Home = () => {
   return (
     <>
       <div className="container-sm 960">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-12">
             <Carousel
@@ -21,6 +22,9 @@ export const Home = () => {
       <div className="container">
         <div className="row">         
           <div className="col-md-4 py-3">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-3 ">
             <Card
               title="Card Title"
               description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"

@@ -11,6 +11,7 @@ const Carousel = (props) => {
       <div
         id="carouselExampleCaptions"
         className="carousel slide py-3"
+        className="carousel slide py-5"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
