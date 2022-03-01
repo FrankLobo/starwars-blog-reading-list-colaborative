@@ -19,65 +19,6 @@ export const Home = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb dfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb  fbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-            </div>
-            <div className="col-md-4 py-3">
-              <Card
-                title="Card Title"
-                description="Lofasfasfsdgdfbgdfgbd bsdfbdsfbsdfb"
-                buttonLabel="Learn More"
-                buttonURL=""
-              />
-=======
         <div className="container">
           <div className="row">
             <div className="col-md-4 py-3">
@@ -141,7 +82,6 @@ export const Home = () => {
                   </div>
                 </div>
               </div>
->>>>>>> 444f6f9 (generando el merge 3)
             </div>
           </div>
         </div>
