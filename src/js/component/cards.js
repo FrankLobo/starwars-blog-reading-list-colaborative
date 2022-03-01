@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <>
-      <div className="card py-5">
+      {/* <div className="card py-5"> */}
         <div className="card d-flex gap-3">
           <img src={rigoImage} className="card-img-top" alt="..." />
           <div className="card-body">
@@ -27,7 +27,7 @@ const Card = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };

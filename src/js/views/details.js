@@ -30,11 +30,11 @@ export const Details = props => {
 				</div>
 			</div>
 			<Link to="/">			
-			<button className="btn btn-primary d-flex justify-content-center">
+			<button className="btn btn-primary d-grid gap-2 col-1 mx-auto">
 				Back to Home
 			</button>
 			</Link>
-			<div className="card-footer bg-white border-danger text-center">
+			<div className="card-footer bg-black border-danger text-white text-center">
 				<a src="aquivalinks" />aquivalinks
 			</div>
 		</>
