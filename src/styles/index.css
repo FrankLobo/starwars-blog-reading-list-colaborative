@@ -14,4 +14,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.card:hover{
+    box-shadow: 5px 10px 20px 1px white;
+    transition: all 0.7s linear;
+}
 
