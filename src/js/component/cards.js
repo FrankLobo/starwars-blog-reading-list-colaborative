@@ -8,7 +8,11 @@ const Card = (props) => {
   return (
     <>
       <div className="card py-5">
+<<<<<<< HEAD
         <div className="card">
+=======
+        <div className="card d-flex gap-3">
+>>>>>>> 444f6f9 (generando el merge 3)
           <img src={rigoImage} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
