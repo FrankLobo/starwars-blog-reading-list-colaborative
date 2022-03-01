@@ -19,69 +19,63 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-4 py-3">
-              <div className="container-fluid">
-                <div className="row">
-                  <div className="col-md-3 ">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb dfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb  fbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                  <div className="col-md-4 py-3">
-                    <Card
-                      title="Card Title"
-                      description="Lofasfasfsdgdfbgdfgbd bsdfbdsfbsdfb"
-                      buttonLabel="Learn More"
-                      buttonURL=""
-                    />
-                  </div>
-                </div>
-              </div>
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb dfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb  fbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgb bsdfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
+            </div>
+            <div className="col-md-4 py-3">
+              <Card
+                title="Card Title"
+                description="Lofasfasfsdgdfbgdfgbd bsdfbdsfbsdfb"
+                buttonLabel="Learn More"
+                buttonURL=""
+              />
             </div>
           </div>
         </div>
