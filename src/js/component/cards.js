@@ -21,7 +21,6 @@ const Card = (props) => {
             <div className="d-grid gap-2 d-flex justify-content-md-end">
               <button
                 className="btn btn-outline-warning me-md-2"
-                className="btn btn-outline-warning me-md-2 "
                 type=""
               ><AiFillHeart /></button>
             </div>
