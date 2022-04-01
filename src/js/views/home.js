@@ -69,14 +69,14 @@ export const Home = () => {
                 buttonURL=""
               />
             </div>
-            <div className="col-md-4 py-3">
+            {/* <div className="col-md-4 py-3">
               <Card
                 title="Card Title"
                 description="Lofasfasfsdgdfbgdfgbd bsdfbdsfbsdfb"
                 buttonLabel="Learn More"
                 buttonURL=""
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
