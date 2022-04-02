@@ -1,15 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import starwars from "../../img/star-wars-logo.jpg";
 
-// import { Link, useParams } from "react-router-dom";
-// import { Context } from "../store/appContext";
 
-
-export const Details = props => {
+export const DetailsCharacters = props => {
 	// const { store, actions } = useContext(Context);
-	// const params = useParams();
 	return (
 		<>
 
@@ -40,22 +35,3 @@ export const Details = props => {
 		</>
 	);
 };
-
-// DetailsCard.propTypes = {
-// 	imageUrl: PropTypes.object,
-// 	title: PropTypes.string,
-// 	text: PropTypes.string,
-
-// };
-// <h1 className="display-4">This will show the demo element: {store.demo[params.theid].title}</h1>
-/* <Link to="/">
-				<span className="btn btn-secondary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link> */
-
-
-
-			// <Link to="/">
-			// 	<button className="btn btn-primary">Back home</button>
-			// </Link>

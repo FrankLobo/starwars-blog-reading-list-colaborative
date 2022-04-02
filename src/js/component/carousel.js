@@ -1,16 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Starwars from "../../img/starwars1.jpg";
 import Starwars2 from "../../img/starwars2.jpg";
 import Starwars3 from "../../img/starwars3.jpg";
+import { Link } from "react-router-dom";
 
 
-const Carousel = (props) => {
+const Carousel = () => {
   return (
     <>
       <div
         id="carouselExampleCaptions"
-        className="carousel slide py-3"
         className="carousel slide py-5"
         data-bs-ride="carousel"
       >
@@ -37,7 +37,37 @@ const Carousel = (props) => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+        <div className="carousel-item active">
+            <img src={Starwars2} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
+              <h5 className="text-warning">Planets</h5>
+              <p className="text-warning">Here will found the planets from starwars</p>
+              <Link to="planets" className="btn btn-outline-secondary">
+                Learn More
+              </Link>
+            </div>
+          </div>
+          <div className="carousel-item ">
+            <img src={Starwars} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
+              <h5 className="text-warning">Starchips</h5>
+              <p className="text-warning">Here will found the starchips from starwars</p>
+              <Link to="Starchips" className="btn btn-outline-secondary">
+                Learn More
+              </Link>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src={Starwars3} className="d-block w-100 rounded-3" alt="..." />
+            <div className="carousel-caption d-none d-md-block text-light">
+              <h5 className="text-warning">Characters</h5>
+              <p className="text-warning">Here will found the characters from starwars</p>
+              <Link to="/" className="btn btn-outline-secondary">
+                Learn More
+              </Link>
+            </div>
+          </div>
+          {/* <div className="carousel-item active">
             <img src={Starwars2} className="d-block w-100 rounded-3" alt="..." />
             <div className="carousel-caption d-none d-md-block text-light">
               <h5>{props.title}</h5>
@@ -66,7 +96,7 @@ const Carousel = (props) => {
                 {props.buttonLabel}
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <button
           className="carousel-control-prev"
@@ -97,12 +127,12 @@ const Carousel = (props) => {
   );
 };
 
-Carousel.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  buttonLabel: PropTypes.string,
-  buttonLabel2: PropTypes.string,
-  buttonURL: PropTypes.string,
-};
+// Carousel.propTypes = {
+//   title: PropTypes.string,
+//   description: PropTypes.string,
+//   buttonLabel: PropTypes.string,
+//   buttonLabel2: PropTypes.string,
+//   buttonURL: PropTypes.string,
+// };
 
 export default Carousel;

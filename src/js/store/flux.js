@@ -4,7 +4,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			apiUrl: 'https://www.swapi.tech/api',
 			characters: null,
 			planets: null,
-			starships: null
+			charactersDetails: [],
+			planetsDetails: [],
+			starshipsDetails: [],
+			favorites: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -20,6 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({
 							characters: data
 						})
+						console.log(setStore)
 					})
 			},
 			loadDataFromPlanets: () => {

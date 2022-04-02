@@ -2,8 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
-import { Details } from "./views/details";
+import { HomeCharacters } from "./views/home";
+import { Planets } from "./views/planets";
+import { Starchips } from "./views/starchips";
+import { DetailsCharacters } from "./views/detailscharacters";
+import { DetailsPlanets } from "./views/detailsplanets";
+import { DetailsStarchips } from "./views/detailsstarchips";
 import NotFound from "./views/NotFound";
 import injectContext from "./store/appContext";
 
@@ -22,10 +26,22 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							<HomeCharacters />
 						</Route>
-						<Route exact path="/details">
-							<Details />
+						<Route exact path="/planets">
+							<Planets />
+						</Route>
+						<Route exact path="/starchips">
+							<Starchips />
+						</Route>
+						<Route exact path="/detailscharacters">
+							<DetailsCharacters />
+						</Route>
+						<Route exact path="/detailsplanets">
+							<DetailsPlanets />
+						</Route>
+						<Route exact path="/detailsstarchips">
+							<DetailsStarchips />
 						</Route>
 						<Route>
 							<NotFound />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logostarwars from "../../img/logostarwars.png"
+// import logostarwars from "../../img/logostarwars.png"
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black">
@@ -8,6 +8,7 @@ export const Navbar = () => {
         <a className="navbar-brand" href="#">
           <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" height="50" width="150" />
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -20,6 +21,17 @@ export const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+            <Link to="/" className="nav-link">Characters</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/planets" className="nav-link">Planets</Link>
+            </li>
+            <li className="nav-item">
+            <Link to="/starchips" className="nav-link">Starchips</Link>
+            </li>
+          </ul>
           <div className="d-flex ms-auto">
             <div className="dropdown">
               <button
