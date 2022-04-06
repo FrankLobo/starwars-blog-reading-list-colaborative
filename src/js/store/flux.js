@@ -1,12 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			apiUrl: 'https://www.swapi.tech/api',
+			// apiUrl: 'https://www.swapi.tech/api',
+			apiUrl: 'https://swapi.dev/api',
 			characters: null,
 			planets: null,
-			charactersDetails: [],
-			planetsDetails: [],
-			starshipsDetails: [],
+			starships: null,
+			// charactersDetails: [],
+			// planetsDetails: [],
+			// starshipsDetails: [],
 			favorites: []
 		},
 		actions: {
@@ -29,6 +31,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch(`${apiUrl}/planets`)
 					.then((response) => response.json())
 					.then((data) => {
+						// console.log("DATA PLANETS", data)
 						setStore({
 							planets: data
 						})
@@ -41,6 +44,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch(`${apiUrl}/starships`)
 					.then((response) => response.json())
 					.then((data) => {
+						// console.log("DATA STARSHIPS", data)
 						setStore({
 							starships: data
 						})
@@ -52,7 +56,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch(`${apiUrl}/people/${uid}`)
 					.then((response) => response.json())
 					.then((data) => {
-						console.log("DATA DETAILS", data)
+						console.log("DATA DETAILS CHARACTER", data)
 						setStore({
 							charactersDetails: data
 						})
@@ -61,10 +65,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			loadDataDetailsPlanets: (uid) => {
 				const { apiUrl } = getStore()
-
 				fetch(`${apiUrl}/planets/${uid}`)
 					.then((response) => response.json())
 					.then((data) => {
+						console.log("DATA DETAILS PLANET", data)
 						setStore({
 							planetsDetails: data
 						})
@@ -72,10 +76,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(error => console.log("error", error));
 			},loadDataDetailsStarchips: (uid) => {
 				const { apiUrl } = getStore()
-
 				fetch(`${apiUrl}/starships/${uid}`)
 					.then((response) => response.json())
 					.then((data) => {
+						console.log("DATA DETAILS STARSHIP", data)
 						setStore({
 							starshipsDetails: data
 						})

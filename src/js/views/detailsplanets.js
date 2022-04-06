@@ -1,46 +1,51 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import starwars from "../../img/star-wars-logo.jpg";
+import { Context } from "../store/appContext";
 
 
 export const DetailsPlanets = props => {
-	// const { store, actions } = useContext(Context);
+	const { store, actions } = useContext(Context);
+	const { id } = useParams;
 	return (
 		<>
-
-			<div className="container border-0">
-				<div className="card mb-3 border-0">
-					<div className="row g-0">
-						<div className="col-md-4">
-							<img src={starwars} className="img-fluid" alt="..." />
-						</div>
-						<div className="col-md-8">
-							<div className="card-body">
-								<h5 className="card-title">name</h5>
-								<p className="card-text col-md-8">diameter:</p>
-								<p className="card-text col-md-8">rotation_period:</p>
-								<p className="card-text col-md-8">orbital_period:</p>
-								<p className="card-text col-md-8">gravity:</p>
-								<p className="card-text col-md-8">population:</p>
-								<p className="card-text col-md-8">climate:</p>
-								<p className="card-text col-md-8">terrain:</p>
-								<p className="card-text col-md-8">surface_water:</p>
-								<p className="card-text col-md-8">created:</p>
-								<p className="card-text col-md-8">edited:</p>
-								<p className="card-text col-md-8">description:</p>
+			{
+				store.planets !== null &&
+				store.planets.results.length > 1 &&
+				store.planets.results.map((result, index) => {
+					return (
+						<div className="container border-0" key={index}>
+							<div className="card mb-3 border-0">
+								<div className="row g-0">
+									<div className="col-md-4">
+										<img src={starwars} className="img-fluid" alt="..." />
+									</div>
+									<div className="col-md-8">
+										<div className="card-body">
+											<h5 className="card-title">{result.name}</h5>
+											<ul>
+												<li className="card-text col-md-8">Diameter: {result.diameter}</li>
+												<li className="card-text col-md-8">Potation_period: {result.rotation_period}</li>
+												<li className="card-text col-md-8">Orbital_period {result.orbital_period}</li>
+												<li className="card-text col-md-8">Gravity {result.gravity}</li>
+												<li className="card-text col-md-8">Population: {result.population}</li>
+												<li className="card-text col-md-8">Climate: {result.climate}</li>
+												<li className="card-text col-md-8">Terrain: {result.terrain}</li>
+												<li className="card-text col-md-8">Surface_water: {result.surface_water}</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
+					)
+				})
+			}
 			<Link to="/">
 				<button className="btn btn-primary d-grid gap-2 col-1 mx-auto">
 					Back to Home
 				</button>
 			</Link>
-			<div className="card-footer bg-black border-danger text-white text-center">
-				<a src="aquivalinks" />aquivalinks
-			</div>
 		</>
 	);
 };

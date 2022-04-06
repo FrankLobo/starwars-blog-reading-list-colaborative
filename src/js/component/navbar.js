@@ -29,7 +29,7 @@ export const Navbar = () => {
               <Link to="/planets" className="nav-link">Planets</Link>
             </li>
             <li className="nav-item">
-            <Link to="/starchips" className="nav-link">Starchips</Link>
+            <Link to="/starchips" className="nav-link">Starships</Link>
             </li>
           </ul>
           <div className="d-flex ms-auto">
