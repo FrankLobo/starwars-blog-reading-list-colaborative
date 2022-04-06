@@ -5,6 +5,7 @@ import { Context } from "../store/appContext";
 
 const CardCharacters = () => {
   const { store } = useContext(Context);
+  
   return (
     <>
       <div className="col d-grid gap-5">

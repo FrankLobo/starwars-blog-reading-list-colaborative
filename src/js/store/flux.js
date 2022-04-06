@@ -10,21 +10,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 			favorites: []
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			// exampleFunction: () => {
-			// 	getActions().changeColor(0, "green");
-			// },
 			loadDataFromCharacters: () => {
 				const { apiUrl } = getStore()
 
 				fetch(`${apiUrl}/people`)
 					.then((response) => response.json())
 					.then((data) => {
+						console.log("DATA CHARACTERS", data)
 						setStore({
 							characters: data
 						})
-						console.log(setStore)
 					})
+					.catch(error => console.log("error", error));
 			},
 			loadDataFromPlanets: () => {
 				const { apiUrl } = getStore()
@@ -36,6 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 							planets: data
 						})
 					})
+					.catch(error => console.log("error", error));
 			},
 			loadDataFromStarships: () => {
 				const { apiUrl } = getStore()
@@ -47,20 +45,43 @@ const getState = ({ getStore, getActions, setStore }) => {
 							starships: data
 						})
 					})
+					.catch(error => console.log("error", error));
 			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
+			loadDataDetailsCharacters: (uid) => {
+				const { apiUrl } = getStore()
+				fetch(`${apiUrl}/people/${uid}`)
+					.then((response) => response.json())
+					.then((data) => {
+						console.log("DATA DETAILS", data)
+						setStore({
+							charactersDetails: data
+						})
+					})
+					.catch(error => console.log("error", error));
+			},
+			loadDataDetailsPlanets: (uid) => {
+				const { apiUrl } = getStore()
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				// const details = store details.map((elm, i) => {
-				// 	if (i === index) elm.background = color;
-				// 	return elm;
-				// });
-				// //reset the global store
-				// setStore({ details: details });
-			}
+				fetch(`${apiUrl}/planets/${uid}`)
+					.then((response) => response.json())
+					.then((data) => {
+						setStore({
+							planetsDetails: data
+						})
+					})
+					.catch(error => console.log("error", error));
+			},loadDataDetailsStarchips: (uid) => {
+				const { apiUrl } = getStore()
+
+				fetch(`${apiUrl}/starships/${uid}`)
+					.then((response) => response.json())
+					.then((data) => {
+						setStore({
+							starshipsDetails: data
+						})
+					})
+					.catch(error => console.log("error", error));
+			},
 		}
 	};
 }

@@ -1,13 +1,17 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Context } from "../store/appContext";
 import starwars from "../../img/star-wars-logo.jpg";
 
 
-export const DetailsCharacters = props => {
-	// const { store, actions } = useContext(Context);
+export const DetailsCharacters = () => {
+	const { store, actions } = useContext(Context);
+	const { uid } = useParams();
 	return (
 		<>
-
+			{/* {
+				store.charactersDetails.result.map()
+			} */}
 			<div className="container border-0">
 				<div className="card mb-3 border-0">
 					<div className="row g-0">
@@ -16,9 +20,18 @@ export const DetailsCharacters = props => {
 						</div>
 						<div className="col-md-8">
 							<div className="card-body">
-								<h5 className="card-title">{props.title}</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+								<h5 className="card-title">name</h5>
+								<p className="card-text col-md-8">Height:</p>
+								<p className="card-text col-md-8">mass:</p>
+								<p className="card-text col-md-8">hair_color:</p>
+								<p className="card-text col-md-8">skin_color:</p>
+								<p className="card-text col-md-8">eye_color:</p>
+								<p className="card-text col-md-8">birth_year:</p>
+								<p className="card-text col-md-8">gender:</p>
+								<p className="card-text col-md-8">created:</p>
+								<p className="card-text col-md-8">edited:</p>
+								<p className="card-text col-md-8">description:</p>
+								{/* <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
 							</div>
 						</div>
 					</div>
@@ -29,9 +42,9 @@ export const DetailsCharacters = props => {
 				Back to Home
 			</button>
 			</Link>
-			<div className="card-footer bg-black border-danger text-white text-center">
+			{/* <div className="card-footer bg-black border-danger text-white text-center">
 				<a src="aquivalinks" />aquivalinks
-			</div>
+			</div> */}
 		</>
 	);
 };

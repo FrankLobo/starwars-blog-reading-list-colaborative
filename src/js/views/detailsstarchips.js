@@ -16,18 +16,29 @@ export const DetailsStarchips = props => {
 						</div>
 						<div className="col-md-8">
 							<div className="card-body">
-								<h5 className="card-title">{props.title}</h5>
-								<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+								<h5 className="card-title">name</h5>
+								<p className="card-text col-md-8">model:</p>
+								<p className="card-text col-md-8">mass:</p>
+								<p className="card-text col-md-8">starship_class:</p>
+								<p className="card-text col-md-8">manufacturer:</p>
+								<p className="card-text col-md-8">cost_in_credits:</p>
+								<p className="card-text col-md-8">length:</p>
+								<p className="card-text col-md-8">crew:</p>
+								<p className="card-text col-md-8">passengers:</p>
+								<p className="card-text col-md-8">MGLT:</p>
+								<p className="card-text col-md-8">cargo_capacity:</p>
+								<p className="card-text col-md-8">created:</p>
+								<p className="card-text col-md-8">edited:</p>
+								<p className="card-text col-md-8">description:</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Link to="/">			
-			<button className="btn btn-primary d-grid gap-2 col-1 mx-auto">
-				Back to Home
-			</button>
+			<Link to="/">
+				<button className="btn btn-primary d-grid gap-2 col-1 mx-auto">
+					Back to Home
+				</button>
 			</Link>
 			<div className="card-footer bg-black border-danger text-white text-center">
 				<a src="aquivalinks" />aquivalinks
