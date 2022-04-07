@@ -5,8 +5,7 @@ import { Context } from "../store/appContext";
 
 
 export const DetailsPlanets = props => {
-	const { store, actions } = useContext(Context);
-	const { id } = useParams;
+	const { store } = useContext(Context);
 	return (
 		<>
 			{

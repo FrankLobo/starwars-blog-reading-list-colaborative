@@ -3,12 +3,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			// apiUrl: 'https://www.swapi.tech/api',
 			apiUrl: 'https://swapi.dev/api',
-			characters: null,
-			planets: null,
-			starships: null,
-			// charactersDetails: [],
-			// planetsDetails: [],
-			// starshipsDetails: [],
+			characters: {},
+			planets: {},
+			starships: {},
+			// charactersDetails: {},
+			// planetsDetails: {},
+			// starshipsDetails: {},
 			favorites: []
 		},
 		actions: {
@@ -51,41 +51,57 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => console.log("error", error));
 			},
-			loadDataDetailsCharacters: (uid) => {
-				const { apiUrl } = getStore()
-				fetch(`${apiUrl}/people/${uid}`)
-					.then((response) => response.json())
-					.then((data) => {
-						console.log("DATA DETAILS CHARACTER", data)
-						setStore({
-							charactersDetails: data
-						})
-					})
-					.catch(error => console.log("error", error));
-			},
-			loadDataDetailsPlanets: (uid) => {
-				const { apiUrl } = getStore()
-				fetch(`${apiUrl}/planets/${uid}`)
-					.then((response) => response.json())
-					.then((data) => {
-						console.log("DATA DETAILS PLANET", data)
-						setStore({
-							planetsDetails: data
-						})
-					})
-					.catch(error => console.log("error", error));
-			},loadDataDetailsStarchips: (uid) => {
-				const { apiUrl } = getStore()
-				fetch(`${apiUrl}/starships/${uid}`)
-					.then((response) => response.json())
-					.then((data) => {
-						console.log("DATA DETAILS STARSHIP", data)
-						setStore({
-							starshipsDetails: data
-						})
-					})
-					.catch(error => console.log("error", error));
-			},
+			addFavorite: newFavorite => {
+                const store = getStore();
+                console.log(newFavorite);
+                const onlyOne = store.favorites.some(item => item === newFavorite)
+                if (onlyOne === true) {
+                    return
+                } else { 
+                setStore( store.favorites.push(newFavorite) )
+                }
+            },
+            removeFavorite: index => {
+                const { favorites } = getStore();
+                favorites.splice(index,1) 
+                setStore(...favorites)
+            },
+            
+			// loadDataDetailsCharacters: (id) => {
+			// 	const { apiUrl } = getStore()
+			// 	fetch(`${apiUrl}/people/${id}`)
+			// 		.then((response) => response.json())
+			// 		.then((data) => {
+			// 			// console.log("DATA DETAILS CHARACTER", data)
+			// 			setStore({
+			// 				charactersDetails: data
+			// 			})
+			// 		})
+			// 		.catch(error => console.log("error", error));
+			// },
+			// loadDataDetailsPlanets: (id) => {
+			// 	const { apiUrl } = getStore()
+			// 	fetch(`${apiUrl}/planets/${id}`)
+			// 		.then((response) => response.json())
+			// 		.then((data) => {
+			// 			// console.log("DATA DETAILS PLANET", data)
+			// 			setStore({
+			// 				planetsDetails: data
+			// 			})
+			// 		})
+			// 		.catch(error => console.log("error", error));
+			// },loadDataDetailsStarchips: (id) => {
+			// 	const { apiUrl } = getStore()
+			// 	fetch(`${apiUrl}/starships/${id}`)
+			// 		.then((response) => response.json())
+			// 		.then((data) => {
+			// 			// console.log("DATA DETAILS STARSHIP", data)
+			// 			setStore({
+			// 				starshipsDetails: data
+			// 			})
+			// 		})
+			// 		.catch(error => console.log("error", error));
+			// },
 		}
 	};
 }
